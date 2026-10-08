@@ -10,6 +10,26 @@ class AppTheme {
       useMaterial3: true,
       colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
       appBarTheme: const AppBarTheme(centerTitle: true),
+      cardTheme: CardThemeData(
+        elevation: 1,
+        margin: const EdgeInsets.symmetric(vertical: 6),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 14,
+        ),
+      ),
+      filledButtonTheme: FilledButtonThemeData(
+        style: FilledButton.styleFrom(
+          minimumSize: const Size.fromHeight(48),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
+      ),
     );
   }
 
@@ -25,4 +45,10 @@ class AppTheme {
         return Colors.blueGrey;
     }
   }
+}
+
+class AppSpacing {
+  static const double page = 16;
+  static const double item = 8;
+  static const double section = 24;
 }
