@@ -5,6 +5,7 @@ import 'screens/sign_in_screen.dart';
 import 'theme/app_theme.dart';
 import 'screens/home_screen.dart';
 import 'screens/task_form_screen.dart';
+import 'screens/task_details_screen.dart';
 
 void main() {
   runApp(const SlaTrackerApp());
@@ -24,6 +25,7 @@ class SlaTrackerApp extends StatelessWidget {
         AppRoutes.signIn: (context) => const SignInScreen(),
         AppRoutes.home: (context) => const HomeScreen(),
         AppRoutes.taskForm: (context) => const TaskFormScreen(),
+        AppRoutes.taskDetails: (context) => const TaskDetailsScreen(),
         // Teammates: send Erin a PR (or ask) to add your screen's route here
       },
       onUnknownRoute: (settings) => MaterialPageRoute(
