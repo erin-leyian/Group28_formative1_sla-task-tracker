@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'task_list_screen.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -13,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   // Swap each placeholder for the real screen once it is merged
   final List<Widget> _pages = const [
     _Placeholder('Dashboard'),
-    _Placeholder('Tasks'),
+    TaskListScreen(),
     _Placeholder('Team'),
   ];
 
