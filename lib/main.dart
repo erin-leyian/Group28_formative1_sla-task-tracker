@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'routes.dart';
 import 'screens/sign_in_screen.dart';
 import 'theme/app_theme.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const SlaTrackerApp());
@@ -20,6 +21,7 @@ class SlaTrackerApp extends StatelessWidget {
       initialRoute: AppRoutes.signIn,
       routes: {
         AppRoutes.signIn: (context) => const SignInScreen(),
+        AppRoutes.home: (context) => const HomeScreen(),
         // Teammates: send Erin a PR (or ask) to add your screen's route here
       },
       onUnknownRoute: (settings) => MaterialPageRoute(
