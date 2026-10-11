@@ -14,7 +14,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _index = 0;
 
-  // Dashboard is Merveille's; swap the Team placeholder once Cynthia's merges
+  // Each tab shows its own screen
   final List<Widget> _pages = const [
     DashboardScreen(),
     TaskListScreen(),
@@ -42,19 +42,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-    );
-  }
-}
-
-class _Placeholder extends StatelessWidget {
-  final String title;
-  const _Placeholder(this.title);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: Center(child: Text('$title screen coming soon')),
     );
   }
 }
