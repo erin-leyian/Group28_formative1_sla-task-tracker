@@ -145,7 +145,7 @@ class _TaskFormScreenState extends State<TaskFormScreen> {
               ),
               const SizedBox(height: AppSpacing.item),
               DropdownButtonFormField<String>(
-                value: _assigneeId,
+                initialValue: _assigneeId,
                 decoration: const InputDecoration(labelText: 'Assignee'),
                 items: [
                   for (final u in _users)

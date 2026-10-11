@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'dashboard_screen.dart';
 import 'task_list_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -12,9 +13,9 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _index = 0;
 
-  // Swap each placeholder for the real screen once it is merged
+  // Dashboard is Merveille's; swap the Team placeholder once Cynthia's merges
   final List<Widget> _pages = const [
-    _Placeholder('Dashboard'),
+    DashboardScreen(),
     TaskListScreen(),
     _Placeholder('Team'),
   ];
