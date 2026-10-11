@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'dashboard_screen.dart';
 import 'task_list_screen.dart';
+import 'team_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _pages = const [
     DashboardScreen(),
     TaskListScreen(),
-    _Placeholder('Team'),
+    TeamScreen(),
   ];
 
   @override
